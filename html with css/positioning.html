@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning Examples</title>
+    <style>
+        /* Common styles for demonstration */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Parent container for positioning examples */
+        .position-container {
+            width: 300px;
+            height: 300px;
+            background-color: #f0f0f0;
+            margin: 20px;
+            position: relative;
+        }
+
+        /* Child elements with different positioning values */
+        .static-box {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            position: static;
+        }
+
+        .relative-box {
+            width: 100px;
+            height: 100px;
+            background-color: #e74c3c;
+            position: relative;
+            top: 20px;
+            left: 20px;
+        }
+
+        .absolute-box {
+            width: 100px;
+            height: 100px;
+            background-color: #2ecc71;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .fixed-box {
+            width: 100px;
+            height: 100px;
+            background-color: #f1c40f;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+        }
+
+        /* Additional styling for labels */
+        .box-label {
+            font-size: 14px;
+            text-align: center;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Positioning Examples</h1>
+
+    <div class="position-container">
+        <div class="static-box">
+            <p class="box-label">Static</p>
+        </div>
+        <div class="relative-box">
+            <p class="box-label">Relative</p>
+        </div>
+        <div class="absolute-box">
+            <p class="box-label">Absolute</p>
+        </div>
+        <div class="fixed-box">
+            <p class="box-label">Fixed</p>
+        </div>
+    </div>
+
+    <p>Each box demonstrates a different CSS positioning value. You can see how they behave within the parent container.
+    </p>
+</body>
+
+</html>
